@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <style>
             body { padding-top: 50px; }
+            .btn { margin: 2px; }
         </style>
         <title>AT2016ard</title>
     </head>
@@ -147,22 +148,22 @@
 
         <div class="col-md-4">
             <h3> Images </h3>
-            <div class="col-md-7">
-                <p>
-                <!-- PanSTARRS-1 image <a href="http://ps1images.stsci.edu/cgi-bin/ps1cutouts?pos=212.686%2C-10.1598" target="_blank"><img class="img-responsive" src="http://ps1images.stsci.edu/images/PS1logo453x300.gif" alt="PanSTARRS-1"></a> </p> -->
-                <a href="http://ps1images.stsci.edu/cgi-bin/ps1cutouts?pos=212.686%2C-10.1598" target="_blank">PanSTARRS-1 image</a> </p>
+            <div class="col-md-12">
+                <a href=https://ned.ipac.caltech.edu/cgi-bin/objsearch?search_type=Near+Position+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=14h10m44.64s+&lat=-10d09m35.28s&radius=0.5&hconst=73&omegam=0.27&omegav=0.73&corr_z=1&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=ANY&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES target="_blank"> <button type="button" class="btn btn-outline-info">NED (within 0.5′)</button></a>
+                <a href=https://ned.ipac.caltech.edu/cgi-bin/objsearch?search_type=Near+Position+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=14h10m44.64s+&lat=-10d09m35.28s&radius=2.0&hconst=73&omegam=0.27&omegav=0.73&corr_z=1&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=ANY&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES target="_blank"> <button type="button" class="btn btn-outline-info">NED (within 2.0′)</button></a>
+                <a href=http://simbad.u-strasbg.fr/simbad/sim-basic?Ident=212.686-10.159800 target="_blank"> <button type="button" class="btn btn-outline-info">SIMBAD</button></a>
+                <a href="http://ps1images.stsci.edu/cgi-bin/ps1cutouts?pos=212.686%2C-10.1598" target="_blank"><button type="button" class="btn btn-outline-info">PanSTARRS-1</button></a>
             </div>
 
-            <div class="col-md-7">
-                <p>DSS image from <a href="http://archive.stsci.edu/" target="_blank">STSci</a>
-                <img class="img-responsive img-thumbnail" src="http://archive.stsci.edu/cgi-bin/dss_search?v=poss2ukstu_red&f=gif&ra=212.686&dec=-10.1598&width=4.253&height=4.253" alt="DSS image from STScI"/>
-                </p>
-            </div>
-
-            <div class="col-md-7">
-                <p>SDSS DR7 image from <a href="http://skyserver.sdss.org/" target="_blank">SkyServer</a>
-                <a href="http://skyserver.sdss.org/dr13/en/tools/chart/navi.aspx?ra=212.686&dec=-10.1598&opt=GS"><img class="img-responsive img-thumbnail" src="http://casjobs.sdss.org/ImgCutoutDR7/getjpeg.aspx?ra=212.686&dec=-10.1598&scale=1&width=253&height=253&opt=G" alt="SDSS DR7 image from SkyServer"></a>
-                </p>
+            <div class="col-md-8">
+                <div class="thumbnail">
+                    <img class="img-responsive img-rounded" src="http://archive.stsci.edu/cgi-bin/dss_search?v=poss2ukstu_red&f=gif&ra=212.686&dec=-10.1598&width=4.253&height=4.253" alt="DSS image from STScI"/>
+                    <div class="caption">DSS image from <a href="http://archive.stsci.edu/" target="_blank">STSci</a></div>
+                </div>
+                <div class="thumbnail">
+                    <a href="http://skyserver.sdss.org/dr13/en/tools/chart/navi.aspx?ra=212.686&dec=-10.1598&opt=GS"><img class="img-responsive img-rounded" src="http://casjobs.sdss.org/ImgCutoutDR7/getjpeg.aspx?ra=212.686&dec=-10.1598&scale=1&width=253&height=253&opt=G" alt="SDSS DR7 image from SkyServer"></a>
+                    <div class="caption">SDSS DR7 image from <a href="http://skyserver.sdss.org/" target="_blank">SkyServer</a></div>
+                </div>
             </div>
         </div>
     </div>  <!-- row -->
@@ -176,8 +177,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <footer>
-                        <p>Last update: 2017-May-08 14:12 UTC</p>
-                        &copy; 2016 <a href="https://janetchenblog.wordpress.com/" target="_blank">Janet Chen</a> & Kai Sun
+                        <p>Last update: 2017-May-11</p>
+                        &copy; 2017 <a href="https://janetchenblog.wordpress.com/" target="_blank">Janet Chen</a> & Kai Sun
                     </footer>
                 </div>
             </div>
