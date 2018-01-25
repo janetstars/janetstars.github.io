@@ -4,9 +4,13 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="/static/sorttable.js"></script>
         <style>
             body { padding-top: 50px; }
             .btn { margin: 2px; }
+            span.errorbars { position:relative; font-size: 0.6em; }
+            span.errorplus { position:absolute; z-index: 1; top:-0.7em; }
+            span.errorminus { position:relative; z-index: 2; top:0.3em; }
         </style>
         <title>LSQ12dlf</title>
     </head>
@@ -36,6 +40,7 @@
             
     <h1>LSQ12dlf</h1>
     
+    <p>For photometry, spectra, and more information of this object, find this object in the <a href=https://sne.space/sne/LSQ12dlf target="_blank">Open Supernovae Catalog.</a></p>
     <div class="row">
         <div class="col-md-8">
             <div class="table-responsive col-md-6">
@@ -47,15 +52,15 @@
                     </tr>
                     <tr>
                         <td class="text-right">RA, DEC</td>
-                        <td>01:50:29.78, -33:08:52.0</td>
+                        <td>01:50:29.78, -21:48:45.4</td>
                     </tr>
                     <tr>
                         <td class="text-right">RA, DEC (deg)</td>
-                        <td>27.6241, -33.1478</td>
+                        <td>27.6241, -21.8126</td>
                     </tr>
                     <tr>
                         <td class="text-right">SN discovery</td>
-                        <td></td>
+                        <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=4299">ATel#4299</a>, <a class="reference external" href="http://www.astronomerstelegram.org/?read=4329">ATel#4329</a></td>
                     </tr>
                     <tr>
                         <td class="text-right">SN reference</td>
@@ -84,7 +89,7 @@
                     </tr>
                     <tr>
                         <td class="text-right">Host magnitude</td>
-                        <td>24.73 ±0.32</td>
+                        <td>24.73<span class="errorbars"><span class="errorplus">+0.32</span><span class="errorminus">-0.32</span></span>&nbsp;&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="text-right">Filter (host)</td>
@@ -100,31 +105,19 @@
                     </tr>
                     <tr>
                         <td class="text-right">Stellar mass</td>
-                        <td>7.56  +0.33 -0.34  </td>
-                    </tr>
-                    <tr>
-                        <td class="text-right">mass ref.</td>
-                        <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2016arXiv161205978S">Schulze et al. 2016</a></td>
+                        <td>7.56<span class="errorbars"><span class="errorplus">+0.33</span><span class="errorminus">-0.34</span></span>&nbsp;&nbsp;<sup>[<a href="obj/LSQ12dlf.html#ref4">4</a>]</sup> </td>
                     </tr>
                     <tr>
                         <td class="text-right">SFR (SED)</td>
-                        <td>0.04   +0.11 -0.03 </td>
-                    </tr>
-                    <tr>
-                        <td class="text-right">SFR SED ref.</td>
-                        <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2016arXiv161205978S">Schulze et al. 2016</a></td>
+                        <td>0.04<span class="errorbars"><span class="errorplus">+0.11</span><span class="errorminus">-0.03</span></span>&nbsp;&nbsp;<sup>[<a href="obj/LSQ12dlf.html#ref4">4</a>]</sup> </td>
                     </tr>
                     <tr>
                         <td class="text-right">SFR (Ha)</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="text-right">SFR_Ha_Ref</td>
-                        <td></td>
-                    </tr>
-                    <tr>
                         <td class="text-right">sSFR (SED)</td>
-                        <td>1.10</td>
+                        <td>1.1</td>
                     </tr>
                     <tr>
                         <td class="text-right">sSFR (Ha)</td>
@@ -135,7 +128,7 @@
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="text-right">12+log(O/H) (KK08 R23)</td>
+                        <td class="text-right">12+log(O/H) (KK04 R23)</td>
                         <td></td>
                     </tr>
                     <tr>
@@ -146,38 +139,58 @@
             </div>
         </div>
 
+
         <div class="col-md-4">
             <h3> Images </h3>
             <div class="col-md-12">
-                <a href=https://ned.ipac.caltech.edu/cgi-bin/objsearch?search_type=Near+Position+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=01h50m29.784s+&lat=-33d08m52.08s&radius=0.5&hconst=73&omegam=0.27&omegav=0.73&corr_z=1&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=ANY&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES target="_blank"> <button type="button" class="btn btn-outline-info">NED (within 0.5′)</button></a>
-                <a href=https://ned.ipac.caltech.edu/cgi-bin/objsearch?search_type=Near+Position+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=01h50m29.784s+&lat=-33d08m52.08s&radius=2.0&hconst=73&omegam=0.27&omegav=0.73&corr_z=1&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=ANY&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES target="_blank"> <button type="button" class="btn btn-outline-info">NED (within 2.0′)</button></a>
-                <a href=http://simbad.u-strasbg.fr/simbad/sim-basic?Ident=27.6241-33.147800 target="_blank"> <button type="button" class="btn btn-outline-info">SIMBAD</button></a>
-                <a href="http://ps1images.stsci.edu/cgi-bin/ps1cutouts?pos=27.6241%2C-33.1478" target="_blank"><button type="button" class="btn btn-outline-info">PanSTARRS-1</button></a>
+                <a href=https://ned.ipac.caltech.edu/cgi-bin/objsearch?search_type=Near+Position+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=01h50m29.784s+&lat=-21d48m45.36s&radius=0.5&hconst=73&omegam=0.27&omegav=0.73&corr_z=1&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=ANY&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES target="_blank"> <button type="button" class="btn btn-outline-info">NED (within 0.5′)</button></a>
+                <a href=https://ned.ipac.caltech.edu/cgi-bin/objsearch?search_type=Near+Position+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=01h50m29.784s+&lat=-21d48m45.36s&radius=2.0&hconst=73&omegam=0.27&omegav=0.73&corr_z=1&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=ANY&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES target="_blank"> <button type="button" class="btn btn-outline-info">NED (within 2.0′)</button></a>
+                <a href=http://simbad.u-strasbg.fr/simbad/sim-basic?Ident=27.6241-21.812600 target="_blank"> <button type="button" class="btn btn-outline-info">SIMBAD</button></a>
+                <a href="http://ps1images.stsci.edu/cgi-bin/ps1cutouts?pos=27.6241%2C-21.8126" target="_blank"><button type="button" class="btn btn-outline-info">PanSTARRS-1</button></a>
             </div>
 
             <div class="col-md-8">
                 <div class="thumbnail">
-                    <img class="img-responsive img-rounded" src="http://archive.stsci.edu/cgi-bin/dss_search?v=poss2ukstu_red&f=gif&ra=27.6241&dec=-33.1478&width=4.253&height=4.253" alt="DSS image from STScI"/>
+                    <img class="img-responsive img-rounded" src="http://archive.stsci.edu/cgi-bin/dss_search?v=poss2ukstu_red&f=gif&ra=27.6241&dec=-21.8126&width=4.253&height=4.253" alt="DSS image from STScI"/>
                     <div class="caption">DSS image from <a href="http://archive.stsci.edu/" target="_blank">STSci</a></div>
                 </div>
                 <div class="thumbnail">
-                    <a href="http://skyserver.sdss.org/dr13/en/tools/chart/navi.aspx?ra=27.6241&dec=-33.1478&opt=GS"><img class="img-responsive img-rounded" src="http://casjobs.sdss.org/ImgCutoutDR7/getjpeg.aspx?ra=27.6241&dec=-33.1478&scale=1&width=253&height=253&opt=G" alt="SDSS DR7 image from SkyServer"></a>
+                    <a href="http://skyserver.sdss.org/dr13/en/tools/chart/navi.aspx?ra=27.6241&dec=-21.8126&opt=GS"><img class="img-responsive img-rounded" src="http://casjobs.sdss.org/ImgCutoutDR7/getjpeg.aspx?ra=27.6241&dec=-21.8126&scale=1&width=253&height=253&opt=G" alt="SDSS DR7 image from SkyServer"></a>
                     <div class="caption">SDSS DR7 image from <a href="http://skyserver.sdss.org/" target="_blank">SkyServer</a></div>
                 </div>
             </div>
         </div>
     </div>  <!-- row -->
 
-    <div class="row">
-        <h3>Spectrum</h3>
-    
-        <p>collecting...</p>
+    <div class="col-md-4">
+        <h3>References</h3>
+        <div class="table-responsive col-md-12">
+            <table class="table table-striped">
+            <tr>
+                <td >1<a name="ref1"></a></td>
+                <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=4299">ATel#4299</a></td>
+            </tr>
+            <tr>
+                <td >2<a name="ref2"></a></td>
+                <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=4329">ATel#4329</a></td>
+            </tr>
+            <tr>
+                <td >3<a name="ref3"></a></td>
+                <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2014MNRAS.444.2096N">Nicholl et al. 2014</a></td>
+            </tr>
+            <tr>
+                <td >4<a name="ref4"></a></td>
+                <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2016arXiv161205978S">Schulze et al. 2016</a></td>
+            </tr>
+            
+            </table>
+        </div>
     </div>
 
             <div class="row">
                 <div class="col-md-12">
                     <footer>
-                        <p>Last update: 2017-May-11</p>
+                        <p>Last update: None</p>
                         &copy; 2017 <a href="https://janetchenblog.wordpress.com/" target="_blank">Janet Chen</a> & Kai Sun
                     </footer>
                 </div>

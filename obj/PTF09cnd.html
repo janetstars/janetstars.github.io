@@ -4,9 +4,13 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="/static/sorttable.js"></script>
         <style>
             body { padding-top: 50px; }
             .btn { margin: 2px; }
+            span.errorbars { position:relative; font-size: 0.6em; }
+            span.errorplus { position:absolute; z-index: 1; top:-0.7em; }
+            span.errorminus { position:relative; z-index: 2; top:0.3em; }
         </style>
         <title>PTF09cnd</title>
     </head>
@@ -36,6 +40,7 @@
             
     <h1>PTF09cnd</h1>
     
+    <p>For photometry, spectra, and more information of this object, find this object in the <a href=https://sne.space/sne/PTF09cnd target="_blank">Open Supernovae Catalog.</a></p>
     <div class="row">
         <div class="col-md-8">
             <div class="table-responsive col-md-6">
@@ -84,7 +89,7 @@
                     </tr>
                     <tr>
                         <td class="text-right">Host magnitude</td>
-                        <td> </td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td class="text-right">Filter (host)</td>
@@ -100,31 +105,19 @@
                     </tr>
                     <tr>
                         <td class="text-right">Stellar mass</td>
-                        <td>7.87  +0.2 -0.21  </td>
-                    </tr>
-                    <tr>
-                        <td class="text-right">mass ref.</td>
-                        <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2016arXiv161205978S">Schulze et al. 2016</a></td>
+                        <td>7.87<span class="errorbars"><span class="errorplus">+0.2</span><span class="errorminus">-0.21</span></span>&nbsp;&nbsp;<sup>[<a href="obj/PTF09cnd.html#ref2">2</a>]</sup> </td>
                     </tr>
                     <tr>
                         <td class="text-right">SFR (SED)</td>
-                        <td>0.23   +0.14 -0.08 </td>
-                    </tr>
-                    <tr>
-                        <td class="text-right">SFR SED ref.</td>
-                        <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2016arXiv161205978S">Schulze et al. 2016</a></td>
+                        <td>0.23<span class="errorbars"><span class="errorplus">+0.14</span><span class="errorminus">-0.08</span></span>&nbsp;&nbsp;<sup>[<a href="obj/PTF09cnd.html#ref2">2</a>]</sup> </td>
                     </tr>
                     <tr>
                         <td class="text-right">SFR (Ha)</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="text-right">SFR_Ha_Ref</td>
-                        <td></td>
-                    </tr>
-                    <tr>
                         <td class="text-right">sSFR (SED)</td>
-                        <td>3.10</td>
+                        <td>3.1</td>
                     </tr>
                     <tr>
                         <td class="text-right">sSFR (Ha)</td>
@@ -132,10 +125,10 @@
                     </tr>
                     <tr>
                         <td class="text-right">12+log(O/H) (PP04 N2)</td>
-                        <td>8.22</td>
+                        <td>8.22<span class="errorbars"><span class="errorplus">+0.09</span><span class="errorminus">-0.15</span></span>&nbsp;&nbsp;<sup>[<a href="obj/PTF09cnd.html#ref3">3</a>]</sup></td>
                     </tr>
                     <tr>
-                        <td class="text-right">12+log(O/H) (KK08 R23)</td>
+                        <td class="text-right">12+log(O/H) (KK04 R23)</td>
                         <td></td>
                     </tr>
                     <tr>
@@ -145,6 +138,7 @@
                 </table>
             </div>
         </div>
+
 
         <div class="col-md-4">
             <h3> Images </h3>
@@ -168,16 +162,31 @@
         </div>
     </div>  <!-- row -->
 
-    <div class="row">
-        <h3>Spectrum</h3>
-    
-        <p>collecting...</p>
+    <div class="col-md-4">
+        <h3>References</h3>
+        <div class="table-responsive col-md-12">
+            <table class="table table-striped">
+            <tr>
+                <td >1<a name="ref1"></a></td>
+                <td><a class="reference external" href="https://arxiv.org/abs/0910.0059">Quimby et al. 2011</a></td>
+            </tr>
+            <tr>
+                <td >2<a name="ref2"></a></td>
+                <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2016arXiv161205978S">Schulze et al. 2016</a></td>
+            </tr>
+            <tr>
+                <td >3<a name="ref3"></a></td>
+                <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2016ApJ...830...13P">Perley et al. 2016</a></td>
+            </tr>
+            
+            </table>
+        </div>
     </div>
 
             <div class="row">
                 <div class="col-md-12">
                     <footer>
-                        <p>Last update: 2017-May-11</p>
+                        <p>Last update: None</p>
                         &copy; 2017 <a href="https://janetchenblog.wordpress.com/" target="_blank">Janet Chen</a> & Kai Sun
                     </footer>
                 </div>

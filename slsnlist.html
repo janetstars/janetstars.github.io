@@ -3,9 +3,13 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="/static/sorttable.js"></script>
         <style>
             body { padding-top: 50px; }
             .btn { margin: 2px; }
+            span.errorbars { position:relative; font-size: 0.6em; }
+            span.errorplus { position:absolute; z-index: 1; top:-0.7em; }
+            span.errorminus { position:relative; z-index: 2; top:0.3em; }
         </style>
         <title>List of SuperLuminous Supernovae</title>
     </head>
@@ -36,7 +40,7 @@
             
 <h1>List of SuperLuminous Supernovae</h1>
     <div class="table-responsive">
-        <table class="table table-striped">
+        <table class="table table-striped sortable">
             <thead>
             <tr>
                 <th>Object</th>
@@ -44,26 +48,23 @@
                 <th>redshift</th>
                 <th>RA</th>
                 <th>DEC</th>
-                <th>Type spectrum</th>
+                <th>Type (spectrum)</th>
                 <th>Type LC</th>
                 <th>SN discovery/classification</th>
-                <th>SN reference</th>
-                
+                <th>SN ref.</th>
             </tr>
-            
             </thead>
             <tbody>
             <tr>
                 <td><a class="reference external" href="obj/PTF11hrq.html">PTF11hrq</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.057</td>
                 <td>00:51:47.22</td>
                 <td>-26:25:10.0</td>
                 <td>I?</td>
                 <td>fast?</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PTF10hgi.html">PTF10hgi</a></td>
@@ -75,35 +76,32 @@
                 <td>fast</td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=2740">ATel#2740</a></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2013ApJ...770..128I">Inserra et al. 2013</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN2010kd.html">SN2010kd</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.101</td>
                 <td>12:08:00.89</td>
                 <td>+49:13:32.88</td>
                 <td>I</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/Gaia16apd.html">Gaia16apd</a></td>
-                <td>-</td>
+                <td>SN2016eay</td>
                 <td>0.1013</td>
                 <td>12:02:51.70</td>
                 <td>+44:15:27.3</td>
                 <td>I</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=9071">ATel#9071</a></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2016arXiv161102782Y">Yan et al. 2016</a>, <a class="reference external" href="https://arxiv.org/abs/1611.06993">Nicholl et al. 2016</a>, <a class="reference external" href="http://adsabs.harvard.edu/abs/2016arXiv161110207K">Kangas et al. 2016</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PTF12dam.html">PTF12dam</a></td>
-                <td>PS1-12arh</td>
+                <td></td>
                 <td>0.107</td>
                 <td>14:24:46.20</td>
                 <td>+46:13:48.3</td>
@@ -111,7 +109,6 @@
                 <td>slow</td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=4121">ATel#4121</a></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2013Natur.502..346N">Nicholl et al. 2013</a>, <a class="reference external" href="http://adsabs.harvard.edu/abs/2015MNRAS.452.1567C">Chen et al. 2015</a>, <a class="reference external" href="http://adsabs.harvard.edu/abs/2016MNRAS.455.3207J">Jerkstrand et al. 2016</a>, <a class="reference external" href="http://adsabs.harvard.edu/abs/2016arXiv160908145V">Vreeswijk et al. 2016</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN2015bn.html">SN2015bn</a></td>
@@ -123,43 +120,39 @@
                 <td>slow</td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=7102">Atel#7102</a></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2016ApJ...826...39N">Nicholl et al. 2016</a>, <a class="reference external" href="http://adsabs.harvard.edu/abs/2016arXiv160802994J">Jerkstrand et al. 2016</a>, <a class="reference external" href="http://adsabs.harvard.edu/abs/2016ApJ...828L..18N">Nicholl et al. 2016</a>, <a class="reference external" href="http://adsabs.harvard.edu/abs/2016ApJ...831...79I">Inserra et al. 2016</a>, <a class="reference external" href="http://adsabs.harvard.edu/abs/2017ApJ...837L..14L">Leloudas et al. 2017</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PTF10nmn.html">PTF10nmn</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.1237</td>
                 <td>15:50:02.809</td>
                 <td>-07:24:42.38</td>
                 <td>I?</td>
                 <td>slow?</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN1999as.html">SN1999as</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.127</td>
                 <td>09:16:30.79</td>
                 <td>+13:39:06.1</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2009Natur.462..624G">Gal-Yam et al. 2009</a>, <a class="reference external" href="http://online.kitp.ucsb.edu/online/grb06/nugent/">P. Nugent slides</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN2007bi.html">SN2007bi</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.1279</td>
                 <td>13:19:20.14</td>
                 <td>+08:55:43.7</td>
                 <td>I</td>
                 <td>slow</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2009Natur.462..624G">Gal-Yam et al. 2009</a>, <a class="reference external" href="http://adsabs.harvard.edu/abs/2010A%26A...512A..70Y">Young et al. 2010</a>, <a class="reference external" href="http://adsabs.harvard.edu/abs/2016MNRAS.455.3207J">Jerkstrand et al. 2016</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN2011ke.html">SN2011ke</a></td>
@@ -171,43 +164,39 @@
                 <td>fast</td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=3351">ATel#3351</a></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2013ApJ...770..128I">Inserra et al. 2013</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SSS120810:231802-560926.html">SSS120810:231802-560926</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.156</td>
                 <td>23:18:01.82</td>
                 <td>-56:09:25.7</td>
-                <td>-</td>
-                <td>-</td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=4313">ATel#4313</a>, <a class="reference external" href="http://www.astronomerstelegram.org/?read=4329">ATel#4329</a></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2014MNRAS.444.2096N">Nicholl et al. 2014</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/LSQ14an.html">LSQ14an</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.163</td>
                 <td>12:53:47.8</td>
                 <td>-29:31:27.2</td>
                 <td>I</td>
                 <td>slow</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2017arXiv170100941I">Inserra et al. 2017</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PTF10bfz.html">PTF10bfz</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.1701</td>
                 <td>12:54:41.288</td>
                 <td>+15:24:17.08</td>
                 <td>I?</td>
                 <td>fast?</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN2012il.html">SN2012il</a></td>
@@ -219,31 +208,28 @@
                 <td>fast?</td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=3918">ATel#3918</a></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2013ApJ...770..128I">Inserra et al. 2013</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PTF09as.html">PTF09as</a></td>
-                <td>-</td>
+                <td>SN2009cb</td>
                 <td>0.1867</td>
                 <td>12:59:15.864</td>
                 <td>+27:16:40.58</td>
                 <td>I?</td>
                 <td>fast?</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/OGLE15xl.html">OGLE15xl</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.19</td>
                 <td>04:20:53.44</td>
                 <td>-73:36:20.1</td>
                 <td>Ib</td>
-                <td>-</td>
-                <td>-</td>
-                <td>Inserra et a l. in prep.</td>
-                
+                <td></td>
+                <td></td>
+                <td>Inserra et al. in prep.</td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN2010hy.html">SN2010hy</a></td>
@@ -253,9 +239,8 @@
                 <td>+19:24:25.74</td>
                 <td>I?</td>
                 <td>slow?</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PTF11rks.html">PTF11rks</a></td>
@@ -267,7 +252,6 @@
                 <td>fast</td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=3841">ATel#3841</a></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2013ApJ...770..128I">Inserra et al. 2013</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/AT2016ard.html">AT2016ard</a></td>
@@ -278,80 +262,73 @@
                 <td>I?</td>
                 <td>?</td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=8790">ATel#8790</a></td>
-                <td>-</td>
-                
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PTF10aagc.html">PTF10aagc</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.206</td>
                 <td>09:39:56.923</td>
                 <td>+21:43:17.09</td>
                 <td>I?</td>
                 <td>fast?</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/OGLE15xx.html">OGLE15xx</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.21</td>
                 <td>05:35:40.35</td>
                 <td>-66:20:48.5</td>
                 <td>I</td>
                 <td>fast</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN2016els.html">SN2016els</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.217</td>
                 <td>20:30:13.92</td>
                 <td>-10:57:01.8</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/DES15S2nr.html">DES15S2nr</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.22</td>
                 <td>02:40:44.62</td>
                 <td>-00:53:26.4</td>
                 <td>I</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=8092">ATel#8092</a></td>
-                <td>-</td>
-                
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/iPTF15esb.html">iPTF15esb</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.224</td>
                 <td>07:58:50.67</td>
                 <td>+66:07:39.1</td>
                 <td>I-late time Ha</td>
                 <td>fast</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2017arXiv170405061Y">Lin et al. 2017</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN2010gx.html">SN2010gx</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.23</td>
                 <td>11:25:46.71</td>
                 <td>-08:49:41.4</td>
                 <td>I</td>
                 <td>fast</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2010ApJ...724L..16P">Pastorello et al. 2010</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN2011kf.html">SN2011kf</a></td>
@@ -363,175 +340,160 @@
                 <td>fast</td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=3883">ATel#3883</a></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2013ApJ...770..128I">Inserra et al. 2013</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/iPTF16bad.html">iPTF16bad</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.2467</td>
                 <td>17:16:39.73</td>
                 <td>+28:22:12.6</td>
                 <td>I-late time Ha</td>
                 <td>fast</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2017arXiv170405061Y">Lin et al. 2017</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/LSQ12dlf.html">LSQ12dlf</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.25</td>
                 <td>01:50:29.78</td>
-                <td>-33:08:52.0</td>
-                <td>-</td>
-                <td>-</td>
+                <td>-21:48:45.4</td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=4299">ATel#4299</a>, <a class="reference external" href="http://www.astronomerstelegram.org/?read=4329">ATel#4329</a></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2014MNRAS.444.2096N">Nicholl et al. 2014</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/LSQ14mo.html">LSQ14mo</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.253</td>
                 <td>10:22:41.5</td>
                 <td>-16:55:14.4</td>
                 <td>I</td>
                 <td>fast</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2015ApJ...815L..10L">Leloudas et al. 2015</a>, <a class="reference external" href="http://adsabs.harvard.edu/abs/2016arXiv161109910C">Chen et al. 2016</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PTF09cnd.html">PTF09cnd</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.258</td>
                 <td>16:12:08.94</td>
                 <td>+51:29:16.1</td>
                 <td>I</td>
                 <td>slow</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="https://arxiv.org/abs/0910.0059">Quimby et al. 2011</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN2013dg.html">SN2013dg</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.265</td>
                 <td>13:18:41.35</td>
                 <td>-07:04:42.9</td>
-                <td>-</td>
-                <td>-</td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=5128">ATel#5128</a></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2014MNRAS.444.2096N">Nicholl et al. 2014</a></td>
-                
             </tr>
             <tr>
-                <td><a class="reference external" href="obj/PSN000123+000504.html">PSN 000123+000504</a></td>
-                <td>-</td>
+                <td><a class="reference external" href="obj/PSNJ000123+000504.html">PSN J000123+000504</a></td>
+                <td></td>
                 <td>0.281</td>
                 <td>00:01:23.36</td>
                 <td>+00:05:04.02</td>
                 <td>no spectrum</td>
-                <td>-</td>
-                <td>-</td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2013arXiv1308.2065K">Kostrzewa-Rutkowska et al. 2013</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN2005ap.html">SN2005ap</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.2832</td>
                 <td>13:01:14.83</td>
                 <td>+27:43:32.3</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2007ApJ...668L..99Q">Quimby et al. 2007</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/CSS121015:004244+132827.html">CSS121015:004244+132827</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.2868</td>
                 <td>00:42:44.34</td>
                 <td>+13:28:26.5</td>
                 <td>II-transition</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=4512">ATel#4512</a></td>
                 <td><a class="reference external" href="https://arxiv.org/abs/1310.1311">Benetti et al. 2014</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PTF10uhf.html">PTF10uhf</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.2882</td>
                 <td>16:52:46.696</td>
                 <td>+47:36:21.76</td>
                 <td>I?</td>
                 <td>fast?</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <td><a class="reference external" href="obj/MLS121104.html">MLS121104</a></td>
-                <td>-</td>
+                <td><a class="reference external" href="obj/MLS121104:J021643+204009.html">MLS 121104:J021643+204009</a></td>
+                <td></td>
                 <td>0.303</td>
                 <td>02:16:42.51</td>
                 <td>+20:40:08.47</td>
                 <td>noisy spectrum</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS17bek.html">PS17bek</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.31</td>
                 <td>10:47:41.90</td>
                 <td>+26:50:06.0</td>
                 <td>I</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://www.pessto.org/index.py?pageName=classifications">PESSTO classification</a></td>
-                <td>-</td>
-                
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PTF12mxx.html">PTF12mxx</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.3296</td>
                 <td>22:30:16.728</td>
                 <td>+27:58:22.01</td>
                 <td>I?</td>
                 <td>fast?</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/iPTF13ehe.html">iPTF13ehe</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.3434</td>
                 <td>06:53:21.50</td>
                 <td>+67:07:56.0</td>
                 <td>I-late time Ha</td>
                 <td>slow</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2015ApJ...814..108Y">Lin et al. 2015</a>, <a class="reference external" href="http://adsabs.harvard.edu/abs/2015A%26A...584L...5M">Moriya et al. 2015</a>, <a class="reference external" href="http://adsabs.harvard.edu/abs/2017arXiv170405061Y">Lin et al. 2017</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/LSQ14bdq.html">LSQ14bdq</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.345</td>
                 <td>10:01:41.60</td>
                 <td>-12:22:13.4</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2015ApJ...807L..18N">Nicholl et al. 2015</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN2009jh.html">SN2009jh</a></td>
@@ -539,195 +501,179 @@
                 <td>0.349</td>
                 <td>14:49:10.08</td>
                 <td>+29:25:11.4</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="https://arxiv.org/abs/0910.0059">Quimby et al. 2011</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PTF10bjp.html">PTF10bjp</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.3584</td>
                 <td>10:06:34.30</td>
                 <td>+67:59:19.0</td>
                 <td>I?</td>
                 <td>fast?</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/DES15C3hav.html">DES15C3hav</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.39</td>
                 <td>03:31:52.17</td>
                 <td>-28:15:09.5</td>
                 <td>I</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=8952">ATel#8952</a></td>
-                <td>-</td>
-                
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN2006oz.html">SN2006oz</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.396</td>
                 <td>22:08:53.56</td>
                 <td>+00:53:50.4</td>
                 <td>I</td>
                 <td>slow</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2012A%26A...541A.129L">Leloudas et al. 2012</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/OGLE16dmu.html">OGLE16dmu</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.426</td>
                 <td>04:48:26.34</td>
                 <td>-62:20:10.6</td>
                 <td>I</td>
                 <td>slow</td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=9542">ATel#9542</a></td>
-                <td>-</td>
-                
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/iPTF13dcc.html">iPTF13dcc</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.431</td>
                 <td>02:57:02.50</td>
                 <td>-00:18:44.0</td>
                 <td>I</td>
                 <td>slow</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2017ApJ...835...58V">Vreeswijk et al. 2017</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PTF10vqv.html">PTF10vqv</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.452</td>
                 <td>03:03:06.84</td>
                 <td>-01:32:34.9</td>
-                <td>-</td>
-                <td>-</td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=2979">ATel#2979</a></td>
-                <td>-</td>
-                
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN2016aj.html">SN2016aj</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.485</td>
                 <td>12:59:00.83</td>
                 <td>-26:07:40.5</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PTF09atu.html">PTF09atu</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.501</td>
                 <td>16:30:24.55</td>
                 <td>+23:38:25.0</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="https://arxiv.org/abs/0910.0059">Quimby et al. 2011</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-14bj.html">PS1-14bj</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.5215</td>
                 <td>10:02:08.433</td>
                 <td>+03:39:19.02</td>
                 <td>I</td>
                 <td>super slow</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2016ApJ...831..144L">Lunnan et al. 2016</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-12bqf.html">PS1-12bqf</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.522</td>
                 <td>02:24:54.62</td>
                 <td>-04:50:22.72</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-11ap.html">PS1-11ap</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.524</td>
                 <td>10:48:27.72</td>
                 <td>+57:09:09.2</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2014MNRAS.437..656M">McCrum et al. 2014</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/OGLE15sd.html">OGLE15sd</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.56</td>
                 <td>01:42:21.46</td>
                 <td>-71:47:15.6</td>
                 <td>I</td>
                 <td>fast</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/DES15S1nog.html">DES15S1nog</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.565</td>
                 <td>02:52:14.98</td>
                 <td>-00:44:36.3</td>
                 <td>I?</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=8717">ATel#8717</a></td>
-                <td>-</td>
-                
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/DES16C3dmp.html">DES16C3dmp</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.5652</td>
                 <td>03:31:28.35</td>
                 <td>-28:32:28.3</td>
                 <td>I</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=9953">ATel#9953</a></td>
-                <td>-</td>
-                
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/OGLE15qz.html">OGLE15qz</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.591</td>
                 <td>03:08:35.88</td>
                 <td>-70:30:41.6</td>
                 <td>I</td>
                 <td>slow</td>
-                <td>-</td>
+                <td></td>
                 <td>Chen et al. in prep.</td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/DES14X3taz.html">DES14X3taz</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.608</td>
                 <td>02:28:04.46</td>
                 <td>-04:05:12.7</td>
@@ -735,19 +681,17 @@
                 <td>slow</td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=7190">ATel#7190</a></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2016ApJ...818L...8S">Smith et al. 2016</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-10bzj.html">PS1-10bzj</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.65</td>
                 <td>03:31:39.826</td>
                 <td>-27:47:42.17</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="https://arxiv.org/abs/1303.1531">Lunnan et al. 2013</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN2013hy.html">SN2013hy</a></td>
@@ -759,319 +703,292 @@
                 <td>slow</td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=5603">ATel#5603</a></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2015MNRAS.449.1215P">Papadopoulos et al. 2015</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-12zn.html">PS1-12zn</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.674</td>
                 <td>09:59:49.615</td>
                 <td>+02:51:31.85</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-11bdn.html">PS1-11bdn</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.738</td>
                 <td>02:25:46.292</td>
                 <td>-05:06:56.57</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/iPTF13ajg.html">iPTF13ajg</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.7403</td>
                 <td>16:39:03.95</td>
                 <td>+37:01:38.4</td>
                 <td>I</td>
                 <td>slow</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2014ApJ...797...24V">Vreeswijk et al. 2014</a></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/DES15X3hm.html">DES15X3hm</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.86</td>
                 <td>02:26:54.96</td>
                 <td>-05:03:38.0</td>
                 <td>I</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=8079">ATel#8079</a></td>
-                <td>-</td>
-                
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/DES14X2byo.html">DES14X2byo</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.869</td>
                 <td>02:23:46.93</td>
                 <td>-06:08:12.3</td>
                 <td>I</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=6635">ATel#6635</a></td>
-                <td>-</td>
-                
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-13gt.html">PS1-13gt</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.884</td>
                 <td>12:18:02.035</td>
                 <td>+47:34:45.95</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-10awh.html">PS1-10awh</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.908</td>
                 <td>22:14:29.831</td>
                 <td>-00:04:03.62</td>
                 <td>I</td>
                 <td>slow</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2011ApJ...743..114C">Chomiuk et al. 2011</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-10ky.html">PS1-10ky</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.956</td>
                 <td>22:13:37.851</td>
                 <td>+01:14:23.57</td>
                 <td>I</td>
                 <td>fast</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2011ApJ...743..114C">Chomiuk et al. 2011</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-11aib.html">PS1-11aib</a></td>
-                <td>-</td>
+                <td></td>
                 <td>0.997</td>
                 <td>22:18:12.217</td>
                 <td>+01:33:32.01</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-10ahf.html">PS1-10ahf</a></td>
-                <td>-</td>
+                <td></td>
                 <td>1.1</td>
                 <td>23:32:28.3</td>
                 <td>-00:21:43.6</td>
                 <td>I</td>
                 <td>slow</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2015MNRAS.448.1206M">McCrum et al. 2015</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/DES15X1noe.html">DES15X1noe</a></td>
-                <td>-</td>
+                <td></td>
                 <td>1.188</td>
                 <td>02:14:41.93</td>
                 <td>-04:52:54.5</td>
                 <td>I</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=8627">ATel#8627</a></td>
-                <td>-</td>
-                
+                <td></td>
             </tr>
             <tr>
-                <td><a class="reference external" href="obj/SCP06F6.html">SCP06F6</a></td>
-                <td>-</td>
+                <td><a class="reference external" href="obj/SCP-06F6.html">SCP-06F6</a></td>
+                <td></td>
                 <td>1.189</td>
                 <td>14:32:27.395</td>
                 <td>+33:32:24.83</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-10pm.html">PS1-10pm</a></td>
-                <td>-</td>
+                <td></td>
                 <td>1.206</td>
                 <td>12:12:42.200</td>
                 <td>+46:59:29.48</td>
                 <td>I</td>
                 <td>fast</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2015MNRAS.448.1206M">McCrum et al. 2015</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-11tt.html">PS1-11tt</a></td>
-                <td>-</td>
+                <td></td>
                 <td>1.283</td>
                 <td>16:12:45.778</td>
                 <td>+54:04:16.96</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/DES14C1fi.html">DES14C1fi</a></td>
-                <td>-</td>
+                <td></td>
                 <td>1.3</td>
                 <td>03:33:49.80</td>
                 <td>-27:03:31.6</td>
                 <td>II?</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://ahpc.euc.ac.cy/uploads/APapadopoulos.pdf">Talk slide by Papadopoulos 2015</a></td>
-                <td>-</td>
-                
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-10afx.html">PS1-10afx</a></td>
-                <td>-</td>
+                <td></td>
                 <td>1.388</td>
                 <td>22:11:24.162</td>
                 <td>+00:09:43.49</td>
                 <td>I?/Ia</td>
                 <td>fast</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2013ApJ...767..162C">Chornock et al. 2013</a>, <a class="reference external" href="http://adsabs.harvard.edu/abs/2013ApJ...768L..20Q">Quimby et al. 2013</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-11afv.html">PS1-11afv</a></td>
-                <td>-</td>
+                <td></td>
                 <td>1.407</td>
                 <td>12:15:37.770</td>
                 <td>+48:10:48.62</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/DES14S2qri.html">DES14S2qri</a></td>
-                <td>-</td>
+                <td></td>
                 <td>1.5</td>
                 <td>02:43:32.14</td>
                 <td>-01:07:34.2</td>
                 <td>?</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=7199">ATel #7199</a></td>
-                <td>-</td>
-                
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SNLS07D2bv.html">SNLS 07D2bv</a></td>
-                <td>-</td>
+                <td></td>
                 <td>1.5</td>
                 <td>10:00:06.62</td>
                 <td>+02:38:35.8</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2013ApJ...779...98H">Howell et al. 2013</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-11bam.html">PS1-11bam</a></td>
-                <td>-</td>
+                <td></td>
                 <td>1.565</td>
                 <td>08:41:14.192</td>
                 <td>+44:01:56.95</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2012ApJ...755L..29B">Berger et al. 2012</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/PS1-12bmy.html">PS1-12bmy</a></td>
-                <td>-</td>
+                <td></td>
                 <td>1.572</td>
                 <td>03:34:13.123</td>
                 <td>-26:31:17.21</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SNLS06D4eu.html">SNLS 06D4eu</a></td>
-                <td>-</td>
+                <td></td>
                 <td>1.588</td>
                 <td>22:15:54.291</td>
                 <td>-18:10:45.56</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2013ApJ...779...98H">Howell et al. 2013</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/DES15E2mlf.html">DES15E2mlf</a></td>
-                <td>-</td>
+                <td></td>
                 <td>1.86</td>
                 <td>00:41:33.40</td>
                 <td>-43:27:17.2</td>
                 <td>?</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=8460">ATel #8460</a></td>
                 <td>Pan et al. in prep.</td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/DES16C2nm.html">DES16C2nm</a></td>
-                <td>-</td>
+                <td></td>
                 <td>1.998</td>
                 <td>03:40:14.83</td>
                 <td>-29:05:53.5</td>
                 <td>I</td>
-                <td>-</td>
+                <td></td>
                 <td><a class="reference external" href="http://www.astronomerstelegram.org/?read=9700">ATel #9700</a></td>
-                <td>-</td>
-                
+                <td></td>
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN2213-1745.html">SN2213-1745</a></td>
-                <td>-</td>
+                <td></td>
                 <td>2.0458</td>
                 <td>22:13:39.970</td>
                 <td>-17:45:24.486</td>
                 <td>I</td>
-                <td>-</td>
-                <td>-</td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2012Natur.491..228C">Cooke et al. 2012</a></td>
-                
             </tr>
             <tr>
                 <td><a class="reference external" href="obj/SN1000+0216.html">SN1000+0216</a></td>
-                <td>-</td>
+                <td></td>
                 <td>3.8993</td>
                 <td>10:00:05.862</td>
                 <td>+02:16:23.621</td>
                 <td>I?</td>
-                <td>-</td>
-                <td>-</td>
+                <td></td>
+                <td></td>
                 <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2012Natur.491..228C">Cooke et al. 2012</a></td>
-                
             </tr>
             
             </tbody>
@@ -1081,7 +998,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <footer>
-                        <p>Last update: 2017-May-16</p>
+                        <p>Last update: 2018-Jan-25</p>
                         &copy; 2017 <a href="https://janetchenblog.wordpress.com/" target="_blank">Janet Chen</a> & Kai Sun
                     </footer>
                 </div>

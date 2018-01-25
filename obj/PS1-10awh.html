@@ -4,9 +4,13 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="/static/sorttable.js"></script>
         <style>
             body { padding-top: 50px; }
             .btn { margin: 2px; }
+            span.errorbars { position:relative; font-size: 0.6em; }
+            span.errorplus { position:absolute; z-index: 1; top:-0.7em; }
+            span.errorminus { position:relative; z-index: 2; top:0.3em; }
         </style>
         <title>PS1-10awh</title>
     </head>
@@ -36,6 +40,7 @@
             
     <h1>PS1-10awh</h1>
     
+    <p>For photometry, spectra, and more information of this object, find this object in the <a href=https://sne.space/sne/PS1-10awh target="_blank">Open Supernovae Catalog.</a></p>
     <div class="row">
         <div class="col-md-8">
             <div class="table-responsive col-md-6">
@@ -84,7 +89,7 @@
                     </tr>
                     <tr>
                         <td class="text-right">Host magnitude</td>
-                        <td> </td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td class="text-right">Filter (host)</td>
@@ -100,26 +105,14 @@
                     </tr>
                     <tr>
                         <td class="text-right">Stellar mass</td>
-                        <td>9.45  +0.56 -0.56  </td>
-                    </tr>
-                    <tr>
-                        <td class="text-right">mass ref.</td>
-                        <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2016arXiv161205978S">Schulze et al. 2016</a></td>
+                        <td>9.45<span class="errorbars"><span class="errorplus">+0.56</span><span class="errorminus">-0.56</span></span>&nbsp;&nbsp;<sup>[<a href="obj/PS1-10awh.html#ref2">2</a>]</sup> </td>
                     </tr>
                     <tr>
                         <td class="text-right">SFR (SED)</td>
-                        <td>2.9   +16 -2.8 </td>
-                    </tr>
-                    <tr>
-                        <td class="text-right">SFR SED ref.</td>
-                        <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2016arXiv161205978S">Schulze et al. 2016</a></td>
+                        <td>2.9<span class="errorbars"><span class="errorplus">+16.05</span><span class="errorminus">-2.84</span></span>&nbsp;&nbsp;<sup>[<a href="obj/PS1-10awh.html#ref2">2</a>]</sup> </td>
                     </tr>
                     <tr>
                         <td class="text-right">SFR (Ha)</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="text-right">SFR_Ha_Ref</td>
                         <td></td>
                     </tr>
                     <tr>
@@ -135,7 +128,7 @@
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="text-right">12+log(O/H) (KK08 R23)</td>
+                        <td class="text-right">12+log(O/H) (KK04 R23)</td>
                         <td></td>
                     </tr>
                     <tr>
@@ -145,6 +138,7 @@
                 </table>
             </div>
         </div>
+
 
         <div class="col-md-4">
             <h3> Images </h3>
@@ -168,16 +162,27 @@
         </div>
     </div>  <!-- row -->
 
-    <div class="row">
-        <h3>Spectrum</h3>
-    
-        <p>collecting...</p>
+    <div class="col-md-4">
+        <h3>References</h3>
+        <div class="table-responsive col-md-12">
+            <table class="table table-striped">
+            <tr>
+                <td >1<a name="ref1"></a></td>
+                <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2011ApJ...743..114C">Chomiuk et al. 2011</a></td>
+            </tr>
+            <tr>
+                <td >2<a name="ref2"></a></td>
+                <td><a class="reference external" href="http://adsabs.harvard.edu/abs/2016arXiv161205978S">Schulze et al. 2016</a></td>
+            </tr>
+            
+            </table>
+        </div>
     </div>
 
             <div class="row">
                 <div class="col-md-12">
                     <footer>
-                        <p>Last update: 2017-May-11</p>
+                        <p>Last update: None</p>
                         &copy; 2017 <a href="https://janetchenblog.wordpress.com/" target="_blank">Janet Chen</a> & Kai Sun
                     </footer>
                 </div>
